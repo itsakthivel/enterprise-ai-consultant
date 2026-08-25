@@ -19,6 +19,7 @@ class Settings(BaseSettings):
 
     rag_chunk_size: int = Field(default=1000, gt=0)
     rag_chunk_overlap: int = Field(default=200, ge=0)
+    embedding_model: str = "all-MiniLM-L6-v2"
 
     log_level: str = "INFO"
 
